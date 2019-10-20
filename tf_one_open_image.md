@@ -1,7 +1,9 @@
 # 关于如何根据tensorflow2.0打开图像
 首先要明确，哪些库可以对图像进行操作；
 有OpenCV、PIL、tensorflow、等等
+
 其次，tensorflow可以对图像做什么；
+
 借用[tf.wiki](tf.wiki)中提到的内容：在 TensorFlow 中，图像数据集的一种典型表示是 [图像数目，长，宽，色彩通道数] 的四维张量。
 ## 如何用tensorflow打开图像？
 百度得一处csdn的文章，[tensorflow中几种读取图片文件并显示方法](https://blog.csdn.net/dcrmg/article/details/82422999)
