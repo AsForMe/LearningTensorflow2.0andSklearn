@@ -100,9 +100,7 @@ rgb_to_grayscale(...): Converts one or more images from RGB to Grayscale.
 rgb_to_hsv(...): Converts one or more images from RGB to HSV.
 
 rgb_to_yiq(...): Converts one or more images from RGB to YIQ.
-## 实践
 
-……未完待续
 rgb_to_yuv(...): Converts one or more images from RGB to YUV.
 
 rot90(...): Rotate image(s) counter-clockwise by 90 degrees.
@@ -122,3 +120,7 @@ transpose(...): Transpose image(s) by swapping the height and width dimension.
 yiq_to_rgb(...): Converts one or more images from YIQ to RGB.
 
 yuv_to_rgb(...): Converts one or more images from YUV to RGB.
+
+## 实践
+
+……未完待续
