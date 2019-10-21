@@ -91,6 +91,12 @@ extract_patches(...): Extract patches from images.
 
 flip_left_right(...): Flip an image horizontally (left to right).
 
+x14 = tf.image.flip_left_right(x2)
+
+plt.figure(14)
+
+plt.imshow(x14)
+
 flip_up_down(...): Flip an image vertically (upside down).
 
 grayscale_to_rgb(...): Converts one or more images from Grayscale to RGB.
@@ -117,19 +123,35 @@ psnr(...): Returns the Peak Signal-to-Noise Ratio between a and b.
 
 random_brightness(...): Adjust the brightness of images by a random factor.
 
+与adjust_brightness类似
+
 random_contrast(...): Adjust the contrast of an image or images by a random factor.
+
+与之前类似
 
 random_crop(...): Randomly crops a tensor to a given size.
 
+与之前类似
+
 random_flip_left_right(...): Randomly flip an image horizontally (left to right).
+
+与之前类似
 
 random_flip_up_down(...): Randomly flips an image vertically (upside down).
 
+与之前类似
+
 random_hue(...): Adjust the hue of RGB images by a random factor.
+
+与之前类似
 
 random_jpeg_quality(...): Randomly changes jpeg encoding quality for inducing jpeg noise.
 
+与之前类似
+
 random_saturation(...): Adjust the saturation of RGB images by a random factor.
+
+与之前类似
 
 resize(...): Resize images to size using the specified method.
 
