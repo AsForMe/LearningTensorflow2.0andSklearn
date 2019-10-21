@@ -1,0 +1,186 @@
+# processing image with tensorflow2.0
+
+## 打开图像的一种方式
+
+tf.io.read_file(
+    filename,
+    name=None
+)
+
+x = tf.io.read_file('XXX.XXX')
+
+x2 = tf.image.decode_jpeg(x,channels = 3)
+
+plt.imshow(x2)
+
+## 查看tensorflow文档并执行样例
+
+adjust_brightness(...): Adjust the brightness of RGB or Grayscale images.
+
+x3 = tf.image.adjust_brightness(x2,delta=1)
+
+plt.imshow(x3)
+
+adjust_contrast(...): Adjust contrast of RGB or grayscale images.
+
+x4 =tf.image.adjust_contrast(x2,2)
+
+plt.imshow(x4)
+
+adjust_gamma(...): Performs Gamma Correction on the input image.
+
+x5 = tf.image.adjust_gamma(x2,0.3)
+
+plt.imshow(x5)
+
+adjust_hue(...): Adjust hue of RGB images.
+
+x6 = tf.image.adjust_hue(x2,0.2)
+
+plt.imshow(x6)
+
+adjust_jpeg_quality(...): Adjust jpeg encoding quality of an RGB image.
+
+x7 = tf.image.adjust_jpeg_quality(x2,75)
+
+plt.imshow(x7)
+
+adjust_saturation(...): Adjust saturation of RGB images.
+
+`x8 = tf.image.adjust_saturation(x2,0.5)`
+
+`plt.imshow(x8)`
+
+central_crop(...): Crop the central region of the image(s).
+
+x9 = tf.image.central_crop(x2,0.3)
+
+plt.imshow(x9)
+
+combined_non_max_suppression(...): Greedily selects a subset of bounding boxes in descending order of score.
+
+convert_image_dtype(...): Convert image to dtype, scaling its values if needed.
+
+crop_and_resize(...): Extracts crops from the input image tensor and resizes them.
+
+crop_to_bounding_box(...): Crops an image to a specified bounding box.
+
+decode_and_crop_jpeg(...): Decode and Crop a JPEG-encoded image to a uint8 tensor.
+
+decode_bmp(...): Decode the first frame of a BMP-encoded image to a uint8 tensor.
+
+decode_gif(...): Decode the frame(s) of a GIF-encoded image to a uint8 tensor.
+
+decode_image(...): Function for decode_bmp, decode_gif, decode_jpeg, and decode_png.
+
+decode_jpeg(...): Decode a JPEG-encoded image to a uint8 tensor.
+
+decode_png(...): Decode a PNG-encoded image to a uint8 or uint16 tensor.
+
+draw_bounding_boxes(...): Draw bounding boxes on a batch of images.
+
+encode_jpeg(...): JPEG-encode an image.
+
+encode_png(...): PNG-encode an image.
+
+extract_glimpse(...): Extracts a glimpse from the input tensor.
+
+extract_jpeg_shape(...): Extract the shape information of a JPEG-encoded image.
+
+extract_patches(...): Extract patches from images.
+
+flip_left_right(...): Flip an image horizontally (left to right).
+
+x14 = tf.image.flip_left_right(x2)
+
+plt.figure(14)
+
+plt.imshow(x14)
+
+flip_up_down(...): Flip an image vertically (upside down).
+
+grayscale_to_rgb(...): Converts one or more images from Grayscale to RGB.
+
+hsv_to_rgb(...): Convert one or more images from HSV to RGB.
+
+image_gradients(...): Returns image gradients (dy, dx) for each color channel.
+
+is_jpeg(...): Convenience function to check if the 'contents' encodes a JPEG image.
+
+non_max_suppression(...): Greedily selects a subset of bounding boxes in descending order of score.
+
+non_max_suppression_overlaps(...): Greedily selects a subset of bounding boxes in descending order of score.
+
+non_max_suppression_padded(...): Greedily selects a subset of bounding boxes in descending order of score.
+
+non_max_suppression_with_scores(...): Greedily selects a subset of bounding boxes in descending order of score.
+
+pad_to_bounding_box(...): Pad image with zeros to the specified height and width.
+
+per_image_standardization(...): Linearly scales each image in image to have mean 0 and variance 1.
+
+psnr(...): Returns the Peak Signal-to-Noise Ratio between a and b.
+
+random_brightness(...): Adjust the brightness of images by a random factor.
+
+与adjust_brightness类似
+
+random_contrast(...): Adjust the contrast of an image or images by a random factor.
+
+与之前类似
+
+random_crop(...): Randomly crops a tensor to a given size.
+
+与之前类似
+
+random_flip_left_right(...): Randomly flip an image horizontally (left to right).
+
+与之前类似
+
+random_flip_up_down(...): Randomly flips an image vertically (upside down).
+
+与之前类似
+
+random_hue(...): Adjust the hue of RGB images by a random factor.
+
+与之前类似
+
+random_jpeg_quality(...): Randomly changes jpeg encoding quality for inducing jpeg noise.
+
+与之前类似
+
+random_saturation(...): Adjust the saturation of RGB images by a random factor.
+
+与之前类似
+
+resize(...): Resize images to size using the specified method.
+
+resize_with_crop_or_pad(...): Crops and/or pads an image to a target width and height.
+
+resize_with_pad(...): Resizes and pads an image to a target width and height.
+
+rgb_to_grayscale(...): Converts one or more images from RGB to Grayscale.
+
+rgb_to_hsv(...): Converts one or more images from RGB to HSV.
+
+rgb_to_yiq(...): Converts one or more images from RGB to YIQ.
+
+rgb_to_yuv(...): Converts one or more images from RGB to YUV.
+
+rot90(...): Rotate image(s) counter-clockwise by 90 degrees.
+
+sample_distorted_bounding_box(...): Generate a single randomly distorted bounding box for an image.
+
+sobel_edges(...): Returns a tensor holding Sobel edge maps.
+
+ssim(...): Computes SSIM index between img1 and img2.
+
+ssim_multiscale(...): Computes the MS-SSIM between img1 and img2.
+
+total_variation(...): Calculate and return the total variation for one or more images.
+
+transpose(...): Transpose image(s) by swapping the height and width dimension.
+
+yiq_to_rgb(...): Converts one or more images from YIQ to RGB.
+
+yuv_to_rgb(...): Converts one or more images from YUV to RGB.
