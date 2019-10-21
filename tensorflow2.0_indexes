@@ -1,0 +1,7 @@
+# 学习的tensorflow库包括
+1. tf
+2. tf.io
+3. tf.image
+4. tf.math
+5. tf.random
+...
